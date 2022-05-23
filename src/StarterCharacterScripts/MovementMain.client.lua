@@ -1,3 +1,15 @@
+--[[
+
+NOTES:
+
+the more I update it the less documented it becomes, im lazy, my apologies
+
+dont take credit
+
+written is VS Code using Rojo
+
+]]
+
 local plr = game:GetService("Players").LocalPlayer -- player object
 local char = plr.Character or plr.CharacterAdded:Wait() -- character object
 local humanoid = char:WaitForChild("Humanoid") -- humanoid object
@@ -15,6 +27,13 @@ local slideAnim = Instance.new("Animation") -- animation for sliding, set the id
 slideAnim.Parent = script
 slideAnim.Name = "SlideAnimation"
 slideAnim.AnimationId = "rbxassetid://9701872337"
+
+
+--UNUSED
+local rollAnim = Instance.new("Animation") -- animation for rolling, set the id to your own, or dont, idk at this point
+rollAnim.Parent = script
+rollAnim.Name = "RollAnimation"
+rollAnim.AnimationId = "rbxassetid://9709580370"
 
 local loadedAnims = { -- animations
     crouch = humanoid:LoadAnimation(crouchAnim),
